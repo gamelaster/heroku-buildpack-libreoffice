@@ -15,3 +15,5 @@ mkdir -p $(dirname $PROFILE_PATH)
 
 # add vendor binaries to the path
 echo 'export OFFICE_PATH="$HOME/.apt/usr/lib/libreoffice"' >> $PROFILE_PATH
+# Set UNO_PATH so unoconv can search for libreoffice
+echo 'export UNO_PATH="$HOME/.apt/usr/lib/libreoffice"' >> $PROFILE_PATH
